@@ -58,7 +58,7 @@ In the first step, a preliminary inspection of the images in order to find corru
 2. Upload the images
 i used ```tf.keras.utils.image_dataset_from_directory``` Generates a ```tf.data.Dataset``` from image files in a directory.
 
-3.Spliting into Train Validation and Test and checking the class balance of the datasets
+3. Spliting into Train Validation and Test and checking the class balance of the datasets
 
 4. Build the model- a CNN model
 ```
@@ -91,7 +91,7 @@ with ```Adam``` optimizer and loss function ```SparseCategoricalCrossentropy```
 the evaluaton gave me 83 percent accuracy, not perfect, but at this point it satisfies me.
 
 6. deploy the model with IBM watson machine learning
-7. i used <a href="https://dataplatform.cloud.ibm.com/exchange/public/entry/view/1eddc77b3a4340d68f762625d40b64f9" >ibm doc for uploading a scikit model </a> and I made an adjustment to my needs
+i used <a href="https://dataplatform.cloud.ibm.com/exchange/public/entry/view/1eddc77b3a4340d68f762625d40b64f9" >ibm doc for uploading a scikit model </a> and I made an adjustment to my needs
 
 ###  Front end <a name = "front"></a>
 USER: The user has the option to upload a photo from the device or copy a URL link of a photo of a dog or cat ==>
@@ -108,7 +108,7 @@ I built a server, the server performs two functions:
 2. Building an API that receives the information from the client and sends it to the IBM Watson API
 
 in the next stage:
-The data goes to the model we built and is stored in IBM Watson, then we receive in response the prediction of whether the image is a dog or a cat, and from the server the data returns back to the client.
+The data goes to the model we built via IBM Watson, then we get a prediction response of whether the image is a dog or a cat, and from the server the data returns back to the client.
 
 ##  WebApp URL <a name="url"></a>
 As of now, the site is live and a prediction can be made
