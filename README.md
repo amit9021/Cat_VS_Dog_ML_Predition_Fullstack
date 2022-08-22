@@ -159,9 +159,9 @@ As of now, the site is live and a prediction can be made
 - [@amit9021](https://github.com/amit9021) - Idea & Initial work
 
 
-## conclusions <a name = "conclusions"></a>
+## Conclusions <a name = "conclusions"></a>
 
-My main goal in this project was to specialize as much as possible in the capabilities of Tensorflow, in addition it was important to me to allow an end user to make predictions on his own without the need for coding knowledge, also, during the project I often encountered security problems and intensive utilization of the user's resources, so I decided to create the possibility to perform the prediction On the server side and not on the client side.
+* My main goal in this project was to specialize as much as possible in the capabilities of Tensorflow, in addition it was important to me to allow an end user to make predictions on his own without the need for coding knowledge, also, during the project I often encountered security problems and intensive utilization of the user's resources, so I decided to create the possibility to perform the prediction On the server side and not on the client side.
 
-The project is not perfect, and those who try to upload another image that is not a dog or a cat will probably be disappointed to see that the model will still return a prediction, due to lack of time I leave this glitch (very simple to fix) for fun and invite you to predict whether a person is a dog or a cat
+* The project is not perfect, and those who try to upload another image that is not a dog or a cat will probably be disappointed to see that the model will still return a prediction, due to lack of time I leave this glitch (very simple to fix) for fun and invite you to predict whether a person is a dog or a cat
 
