@@ -144,6 +144,8 @@ The data goes to the model we built via IBM Watson, then we get a prediction res
 As of now, the site is live and a prediction can be made
 <a href="https://protected-oasis-78167.herokuapp.com">Check it</a>
 
+* Since the goal of the project is to create an end-to-end application, the level of importance of the UI is a low priority and therefore the design is a simple BOOTSTRAP design, not too flashy but meets the needs of the project
+
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
