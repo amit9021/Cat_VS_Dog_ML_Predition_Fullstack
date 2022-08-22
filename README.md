@@ -136,7 +136,8 @@ I built a server, the server performs two functions:
 2. Building an API that receives the information from the client and sends it to the IBM Watson API
 
 * in the next stage:
-The data goes to the model we built via IBM Watson, then we get a prediction response of whether the image is a dog or a cat, and from the server the data returns back to the client.
+The data goes to the model we built with Tensorflow hosted at IBM Watson, then we get a prediction response of whether the image is a dog or a cat,
+from the server the data returns back to the client and shows him the prediction.
 
 ##  WebApp URL <a name="url"></a>
 As of now, the site is live and a prediction can be made
