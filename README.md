@@ -53,9 +53,7 @@ On the server side I used NODEJS and IBM WATSON MACHIN LEARNING to host the mode
 
 The data set I used is from KAGGLE and you can check it  <a href="https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset" >here</a>
 
-The data set contains 25K images of dogs and cats that are divided into two classes (dog / cat), the images come in different sizes and therefore it is important to perform pre-processing and correct the size, also each image consists of 3 layers of RGB color.
-
-
+The data set contains 25K images of dogs and cats that are divided into two classes (dog / cat), the images come in different sizes and therefore it is important to perform pre-processing and correct the size to match the model's requirements, each image consists of 3 layers of RGB color.
   
 ### Some Random images of the Dataset
 <p align="center">
@@ -71,21 +69,21 @@ The data set contains 25K images of dogs and cats that are divided into two clas
 
 </p>
 
-
-
 ## Building a CNN model with TensorFlow <a name = "cnn"></a>
+The model was built in Python in the Jupiter notebook environment
+
 Our dependence:
 ```
 Numpy
-Tensor flow
+Tensorflow
 ```
 1. Preprocessing:
-In the first step, a preliminary inspection of the images in order to find corrupted images and delete them or convert them to an image that can work with TF.
+first step, a preliminary inspection of the images in order to find corrupted images and delete them or convert them to an image that can work with TF.
 
-2. Upload the images
-i used ```tf.keras.utils.image_dataset_from_directory``` Generates a ```tf.data.Dataset``` from image files in a directory.
+2. Upload the images:
+ i used ```tf.keras.utils.image_dataset_from_directory``` Generates a ```tf.data.Dataset``` from image files in a directory.
 
-3. Spliting into Train Validation and Test and checking the class balance of the datasets
+3. Spliting into Train Validation and Test Datasets and check the class balance in each datasets
 
 4. Build the model- a CNN model
 ```
@@ -114,15 +112,15 @@ model = tf.keras.Sequential([
 ```
 with ```Adam``` optimizer and loss function ```SparseCategoricalCrossentropy```
 
-5. Fiting the model with 20 epoches and evaluation of the model.
-the evaluaton gave me 83 percent accuracy, not perfect, but at this point it satisfies me.
+5. Fiting the model with 20 epoches and evaluat the model.
+* the evaluaton gave me 83 percent accuracy, not perfect, but at this point it satisfies me.
 
-6. deploy the model with IBM watson machine learning - 
+6. deploy the model using IBM watson machine learning - 
 
 I used <a href="https://dataplatform.cloud.ibm.com/exchange/public/entry/view/1eddc77b3a4340d68f762625d40b64f9" >ibm doc for uploading a scikit model </a> and I made an adjustment to my needs
 
 ##  Front end <a name = "front"></a>
-* <b>USER:</b> The user has the option to upload a photo from the device or copy a URL link of a photo of a dog or cat ==>
+* <b>USER:</b> The user have the options of uploading a photo from local device or copy dog or cat photo URL link  ==>
 
 * <b>In the browser:</b> After the user uploaded an image, I used TensorFlow js to pre-process the image in order to match the model inputs, the steps was: 
     1. resizing
