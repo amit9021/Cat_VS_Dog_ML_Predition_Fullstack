@@ -23,6 +23,7 @@
 ## 📝 Table of Contents
 
 - [About](#about)
+- [The Dataset](#dataset)
 - [Building a CNN model with TensorFlow](#cnn)
 - [Front end](#front)
 - [Back end](#back)
@@ -45,6 +46,26 @@ On the server side I used NODEJS and IBM WATSON MACHIN LEARNING to host the mode
 Below is the project architecture:
 
 <img width=700px height=400px align="center" src="https://user-images.githubusercontent.com/60137426/185793061-64b6f2ec-b6b4-4a05-8246-984b878d6a14.jpg" alt="project architecture">
+
+##  The Dataset <a name = "dataset"></a>
+
+The data set I used is from KAGGLE and you can check it  <a href="https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset" >here</a>
+
+The data set contains 25K images of dogs and cats that are divided into two classes (dog / cat), the images come in different sizes and therefore it is important to perform pre-processing and correct the size, also each image consists of 3 layers of RGB color.
+
+<p>
+
+<img width=200px height=200px   src="https://user-images.githubusercontent.com/60137426/185878182-d9c6af1c-6139-45af-bfb4-aac7c1f59dcb.jpg" style="padding: 10px;">
+57
+<img width=200px height=200px src="https://user-images.githubusercontent.com/60137426/185878225-82eee6be-2aa8-4daa-9a0b-0e62c4a88c23.jpg" style="padding: 10px;">
+
+<img width=200px height=200px src="https://user-images.githubusercontent.com/60137426/185878276-57b3ab99-0c8c-436c-aedc-5efdfd671650.jpg" style="padding: 10px;">
+
+<img width=200px height=200px src="https://user-images.githubusercontent.com/60137426/185878304-f5bbafb1-7815-4650-a4a7-e4248666b182.jpg" style="padding: 10px;">
+
+</p>
+
+
 
 ### Building a CNN model with TensorFlow <a name = "cnn"></a>
 Our dependence:
