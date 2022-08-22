@@ -117,24 +117,27 @@ with ```Adam``` optimizer and loss function ```SparseCategoricalCrossentropy```
 5. Fiting the model with 20 epoches and evaluation of the model.
 the evaluaton gave me 83 percent accuracy, not perfect, but at this point it satisfies me.
 
-6. deploy the model with IBM watson machine learning
-i used <a href="https://dataplatform.cloud.ibm.com/exchange/public/entry/view/1eddc77b3a4340d68f762625d40b64f9" >ibm doc for uploading a scikit model </a> and I made an adjustment to my needs
+6. deploy the model with IBM watson machine learning - 
+
+I used <a href="https://dataplatform.cloud.ibm.com/exchange/public/entry/view/1eddc77b3a4340d68f762625d40b64f9" >ibm doc for uploading a scikit model </a> and I made an adjustment to my needs
 
 ##  Front end <a name = "front"></a>
-USER: The user has the option to upload a photo from the device or copy a URL link of a photo of a dog or cat ==>
+* <b>USER:</b> The user has the option to upload a photo from the device or copy a URL link of a photo of a dog or cat ==>
 
-In the browser: After the user uploaded an image, I used TensorFlow js to pre-process the image in order to match the model inputs, the steps was: 1.resizing 2.converting the image to an array. 
+* <b>In the browser:</b> After the user uploaded an image, I used TensorFlow js to pre-process the image in order to match the model inputs, the steps was: 
+    1. resizing
+    2. converting the image to an array. 
 
-In the next step, the array is sent to the server
+==> In the next step, the array is sent to the server
 
 ##  Back end <a name = "back"></a>
 
-Using Node Js and express js
+* <b>Using Node Js and express js -</b>
 I built a server, the server performs two functions:
 1. Creating an end point for the site itself.
 2. Building an API that receives the information from the client and sends it to the IBM Watson API
 
-in the next stage:
+* in the next stage:
 The data goes to the model we built via IBM Watson, then we get a prediction response of whether the image is a dog or a cat, and from the server the data returns back to the client.
 
 ##  WebApp URL <a name="url"></a>
