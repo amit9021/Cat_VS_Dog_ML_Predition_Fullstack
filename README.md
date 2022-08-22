@@ -1,7 +1,8 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="images\logo_transparent.png" alt="Project logo"></a>
+ <img width=200px height=200px src="https://user-images.githubusercontent.com/60137426/185881654-727bbbe2-639b-4f78-bdc6-54fefbf6ac5c.png" alt="Project logo"></a>
 </p>
+
 
 <h3 align="center">FULL STACK ML</h3>
 
@@ -22,14 +23,14 @@
 
 ## 📝 Table of Contents
 
-- [About](#about)
-- [The Dataset](#dataset)
-- [Building a CNN model with TensorFlow](#cnn)
-- [Front end](#front)
-- [Back end](#back)
-- [Web app url and usage](#url)
-- [Authors](#authors)
-- [conclusions](#conclusions)
+[About](#about) |
+[The Dataset](#dataset) |
+[Building a CNN model with TensorFlow](#cnn) |
+[Front end](#front) |
+[Back end](#back) |
+[Web app url and usage](#url) |
+[Authors](#authors) |
+[conclusions](#conclusions)
 
 ##  About <a name = "about"></a>
 
@@ -43,9 +44,10 @@ On the client side I used HTML JS and TENSORFLOW JS.
 
 On the server side I used NODEJS and IBM WATSON MACHIN LEARNING to host the model.
 
-Below is the project architecture:
-
+### Below is the project architecture:
+<p align="center">
 <img width=700px height=400px align="center" src="https://user-images.githubusercontent.com/60137426/185793061-64b6f2ec-b6b4-4a05-8246-984b878d6a14.jpg" alt="project architecture">
+  </p>
 
 ##  The Dataset <a name = "dataset"></a>
 
@@ -53,21 +55,25 @@ The data set I used is from KAGGLE and you can check it  <a href="https://www.ka
 
 The data set contains 25K images of dogs and cats that are divided into two classes (dog / cat), the images come in different sizes and therefore it is important to perform pre-processing and correct the size, also each image consists of 3 layers of RGB color.
 
-<p>
 
-<img width=200px height=200px   src="https://user-images.githubusercontent.com/60137426/185878182-d9c6af1c-6139-45af-bfb4-aac7c1f59dcb.jpg" style="padding: 10px;">
-57
-<img width=200px height=200px src="https://user-images.githubusercontent.com/60137426/185878225-82eee6be-2aa8-4daa-9a0b-0e62c4a88c23.jpg" style="padding: 10px;">
+  
+### Some Random images of the Dataset
+<p align="center">
+<img width=250 height=250   src="https://user-images.githubusercontent.com/60137426/185878182-d9c6af1c-6139-45af-bfb4-aac7c1f59dcb.jpg">
 
-<img width=200px height=200px src="https://user-images.githubusercontent.com/60137426/185878276-57b3ab99-0c8c-436c-aedc-5efdfd671650.jpg" style="padding: 10px;">
+<img width=250 height=250 src="https://user-images.githubusercontent.com/60137426/185878225-82eee6be-2aa8-4daa-9a0b-0e62c4a88c23.jpg">
+</p>
 
-<img width=200px height=200px src="https://user-images.githubusercontent.com/60137426/185878304-f5bbafb1-7815-4650-a4a7-e4248666b182.jpg" style="padding: 10px;">
+<p align="center">
+<img width=250 height=250 src="https://user-images.githubusercontent.com/60137426/185878276-57b3ab99-0c8c-436c-aedc-5efdfd671650.jpg">
+
+<img width=250 height=250 src="https://user-images.githubusercontent.com/60137426/185878304-f5bbafb1-7815-4650-a4a7-e4248666b182.jpg">
 
 </p>
 
 
 
-### Building a CNN model with TensorFlow <a name = "cnn"></a>
+## Building a CNN model with TensorFlow <a name = "cnn"></a>
 Our dependence:
 ```
 Numpy
@@ -114,14 +120,14 @@ the evaluaton gave me 83 percent accuracy, not perfect, but at this point it sat
 6. deploy the model with IBM watson machine learning
 i used <a href="https://dataplatform.cloud.ibm.com/exchange/public/entry/view/1eddc77b3a4340d68f762625d40b64f9" >ibm doc for uploading a scikit model </a> and I made an adjustment to my needs
 
-###  Front end <a name = "front"></a>
+##  Front end <a name = "front"></a>
 USER: The user has the option to upload a photo from the device or copy a URL link of a photo of a dog or cat ==>
 
 In the browser: After the user uploaded an image, I used TensorFlow js to pre-process the image in order to match the model inputs, the steps was: 1.resizing 2.converting the image to an array. 
 
 In the next step, the array is sent to the server
 
-###  Back end <a name = "back"></a>
+##  Back end <a name = "back"></a>
 
 Using Node Js and express js
 I built a server, the server performs two functions:
