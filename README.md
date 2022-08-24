@@ -21,7 +21,10 @@
     <br> 
 </p>
 
+
 ## 📝 Table of Contents
+
+<div align="center">
 
 [About](#about) |
 [The Dataset](#dataset) |
@@ -30,7 +33,8 @@
 [Back end](#back) |
 [Web app url and usage](#url) |
 [Authors](#authors) |
-[conclusions](#conclusions)
+[Conclusions](#conclusions)
+</div>
 
 ##  About <a name = "about"></a>
 
