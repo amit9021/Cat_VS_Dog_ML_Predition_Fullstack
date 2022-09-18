@@ -1,4 +1,4 @@
-<p align="center">
+ <p align="center">
   <a href="" rel="noopener">
  <img width=200px height=200px src="https://user-images.githubusercontent.com/60137426/185881654-727bbbe2-639b-4f78-bdc6-54fefbf6ac5c.png" alt="Project logo"></a>
 </p>
@@ -31,22 +31,22 @@
 [Building a CNN model with TensorFlow](#cnn) |
 [Front end](#front) |
 [Back end](#back) |
-[Web app url and usage](#url) |
+[Web app URL and usage](#url) |
 [Authors](#authors) |
 [Conclusions](#conclusions)
 </div>
 
 ##  About <a name = "about"></a>
 
-The purpose of this personal project is first and foremost to strengthen the knowledge in machine learning and NN in particular.
-This machine knows how to take a picture from a user and make a prediction as to whether the picture is of a dog or a cat.
+The purpose of this personal project is, first and foremost, to strengthen the knowledge in machine learning and NN in particular.
+This machine knows how to take a picture from a user and make a prediction as to whether the image is of a dog or a cat.
 
 This project implements several technologies:
 I build the model with TensorFlow using CNN
 
-On the client side I used HTML JS and TENSORFLOW JS.
+On the client side, I used HTML JS and TensorFlow JS.
 
-On the server side I used NODEJS and IBM WATSON MACHIN LEARNING to host the model.
+On the server side, I used NODEJS and IBM WATSON MACHIN LEARNING to host the model.
 
 ### Below is the project architecture:
 <p align="center">
@@ -55,9 +55,9 @@ On the server side I used NODEJS and IBM WATSON MACHIN LEARNING to host the mode
 
 ##  The Dataset <a name = "dataset"></a>
 
-The data set I used is from KAGGLE and you can check it  <a href="https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset" >here</a>
+The data set I used is from KAGGLE, and you can check it  <a href="https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset" >here</a>
 
-The data set contains 25K images of dogs and cats that are divided into two classes (dog / cat), the images come in different sizes and therefore it is important to perform pre-processing and correct the size to match the model's requirements, each image consists of 3 layers of RGB color.
+The data set contains 25K images of dogs and cats divided into two classes (dog/cat). The photos come in different sizes, so it is crucial to perform pre-processing and correct the size to match the model's requirements. Each image consists of 3 layers of RGB color.
   
 ### Some Random images of the Dataset
 <p align="center">
@@ -82,12 +82,12 @@ Numpy
 Tensorflow
 ```
 1. Preprocessing:
-first step, a preliminary inspection of the images in order to find corrupted images and delete them or convert them to an image that can work with TF.
+The first step is a preliminary inspection of the images to find corrupted pictures and delete them or convert them to an image that can work with TF.
 
 2. Upload the images:
- i used ```tf.keras.utils.image_dataset_from_directory``` Generates a ```tf.data.Dataset``` from image files in a directory.
+ I used ```tf.keras.utils.image_dataset_from_directory``` Generates a ```tf.data.Dataset``` from image files in a directory.
 
-3. Spliting into Train Validation and Test Datasets and check the class balance in each datasets
+3. Splitting into Train Validation and Test Datasets and check the class balance in each dataset
 
 4. Build the model- a CNN model
 ```
@@ -116,17 +116,17 @@ model = tf.keras.Sequential([
 ```
 with ```Adam``` optimizer and loss function ```SparseCategoricalCrossentropy```
 
-5. Fiting the model with 20 epoches and evaluat the model.
-* the evaluaton gave me 83 percent accuracy, not perfect, but at this point it satisfies me.
+5. Fit the model with 20 epochs and evaluate the model.
+* The evaluation gave me 83 percent accuracy, not perfect, but at this point, it satisfies me.
 
-6. deploy the model using IBM watson machine learning - 
+6. deploy the model using IBM Watson machine learning - 
 
-I used <a href="https://dataplatform.cloud.ibm.com/exchange/public/entry/view/1eddc77b3a4340d68f762625d40b64f9" >ibm doc for uploading a scikit model </a> and I made an adjustment to my needs
+I used <a href="https://dataplatform.cloud.ibm.com/exchange/public/entry/view/1eddc77b3a4340d68f762625d40b64f9" >ibm doc for uploading a scikit model </a>, and I adjusted to my needs
 
 ##  Front end <a name = "front"></a>
-* <b>USER:</b> The user have the options of uploading a photo from local device or copy dog or cat photo URL link  ==>
+* <b>USER:</b> The user have the option of uploading a photo from a local device or copying a dog or cat photo URL link  ==>
 
-* <b>In the browser:</b> After the user uploaded an image, I used TensorFlow js to pre-process the image in order to match the model inputs, the steps was: 
+* <b>In the browser:</b> After the user uploads an image, I used TensorFlow js to pre-process the image to match the model inputs. The steps were: 
     1. resizing
     2. converting the image to an array. 
 
@@ -135,25 +135,25 @@ I used <a href="https://dataplatform.cloud.ibm.com/exchange/public/entry/view/1e
 ##  Back end <a name = "back"></a>
 
 * <b>Using Node Js and express js -</b>
-I built a server, the server performs two functions:
-1. Creating an end point for the site itself.
+I built a server. The server performs two functions:
+1. Creating an endpoint for the site itself.
 2. Building an API that receives the information from the client and sends it to the IBM Watson API
 
 * in the next stage:
 The data goes to the model we built with Tensorflow hosted at IBM Watson, then we get a prediction response of whether the image is a dog or a cat,
-from the server the data returns back to the client and shows him the prediction.
+from the server, the data returns to the client and shows him the prediction.
 
 ##  WebApp URL <a name="url"></a>
-As of now, the site is live and a prediction can be made
+As of now, the site is live, and a prediction can be made
 <a href="https://protected-oasis-78167.herokuapp.com">Check it</a>
 
-* Since the goal of the project is to create an end-to-end application, the level of importance of the UI is a low priority and therefore the design is a simple BOOTSTRAP design, not too flashy but meets the needs of the project
+* Since the goal of the project is to create an end-to-end application, the level of importance of the UI is a low priority, and therefore the design is a simple BOOTSTRAP design, not too flashy but meets the needs of the project
 
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
 - [TensorFlow](https://www.Tensorflow.com/) - ML Framework for python
-- [Ibm watson macine learning](https://cloud.ibm.com/catalog/services/machine-learning/) - ML model hosting
+- [Ibm Watson machine learning](https://cloud.ibm.com/catalog/services/machine-learning/) - ML model hosting
 - [Express](https://expressjs.com/) - Server Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
@@ -164,7 +164,7 @@ As of now, the site is live and a prediction can be made
 
 ## Conclusions <a name = "conclusions"></a>
 
-* My main goal in this project was to specialize as much as possible in the capabilities of Tensorflow, in addition it was important to me to allow an end user to make predictions on his own without the need for coding knowledge, also, during the project I often encountered security problems and intensive utilization of the user's resources, so I decided to create the possibility to perform the prediction On the server side and not on the client side.
+* My main goal in this project was to specialize as much as possible in the capabilities of Tensorflow. In addition, it was important to me to allow an end user to make predictions independently without the need for coding knowledge. Also, during the project, I often encountered security problems and intensive utilization of the user's resources, so I decided to create the possibility to perform the prediction On the server side and not on the client side.
 
-* The project is not perfect, and those who try to upload another image that is not a dog or a cat will probably be disappointed to see that the model will still return a prediction, due to lack of time I leave this glitch (very simple to fix) for fun and invite you to predict whether a person is a dog or a cat
+* The project is not perfect, and those who try to upload another image that is not a dog or a cat will probably be disappointed to see that the model will still return a prediction. Due to lack of time, I leave this glitch (very simple to fix) for fun and invite you to predict whether a person is a dog or a cat
 
